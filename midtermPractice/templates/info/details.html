@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Name: {{name|date}}</p>
+    <p>Age: {{age}}</p>
+    {%if age >= 18%}
+    <p>You are an adult!</p>
+    {%endif%}
+    <p>Friends</p>
+    <ul>
+      {%for x in friends%}
+      <li>{{x|capfirst}}</li>
+      {%endfor%}
+    </ul>
+  </body>
+</html>
